@@ -1,0 +1,85 @@
+/*
+Theme Name: Gary Wallage Portrait Pro
+Theme URI: https://staging.garywallage.uk
+Description: Executive portrait, corporate headshots, and personal branding theme for Gary Wallage Photography. Child theme of Gary Wedding Pro.
+Author: Gary Wallage
+Author URI: https://garywallage.uk
+Template: gary-wedding-pro
+Version: 1.0.0
+License: GNU General Public License v2 or later
+Text Domain: gary-portrait-pro
+*/
+
+:root {
+    /* Portrait & Headshots Design Tokens */
+    --brand-bg: #F5F7FA;              /* Crisp Corporate Platinum */
+    --brand-black: #0F1D2F;           /* Deep Midnight Slate */
+    --brand-text: #0F1D2F;
+    --brand-accent: #1A365D;          /* Deep Executive Navy */
+    --brand-gold-light: #4A90E2;      /* Sky Blue Accent */
+    --brand-steel: #7FB3D5;           /* Slate Steel Highlight */
+    --brand-white: #FFFFFF;
+    --brand-border: rgba(26, 54, 93, 0.2);
+    
+    /* Typography & Hierarchy */
+    --font-serif: "Cinzel", "Georgia", "Times New Roman", serif;
+    --font-sans: "Inter", "Helvetica Neue", -apple-system, sans-serif;
+    --font-script: "Pinyon Script", "Cormorant Garamond", serif;
+}
+
+body {
+    background-color: var(--brand-bg);
+    color: var(--brand-text);
+    font-family: var(--font-sans);
+    letter-spacing: 0.01em;
+}
+
+/* Plaque & Investment Card Overrides */
+.gw-investment-plaque {
+    border-color: var(--brand-accent) !important;
+    background: linear-gradient(145deg, #FFFFFF 0%, #EDF2F7 100%) !important;
+    border-radius: 6px !important;
+}
+
+.gw-investment-plaque .plaque-title,
+.gw-investment-plaque .plaque-price {
+    color: var(--brand-accent) !important;
+}
+
+.gw-investment-plaque .plaque-badge {
+    background: var(--brand-accent) !important;
+    color: var(--brand-white) !important;
+}
+
+/* Buttons & Links */
+.btn-brand, 
+.wp-block-button__link,
+.gary-btn-primary {
+    background-color: var(--brand-accent) !important;
+    color: var(--brand-white) !important;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.btn-brand:hover,
+.wp-block-button__link:hover,
+.gary-btn-primary:hover {
+    background-color: #122540 !important;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 15px rgba(26, 54, 93, 0.35);
+}
+
+/* Corporate Executive Badge */
+.portrait-executive-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    background: rgba(26, 54, 93, 0.1);
+    border: 1px solid var(--brand-gold-light);
+    border-radius: 4px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--brand-accent);
+}
