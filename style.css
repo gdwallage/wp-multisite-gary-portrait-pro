@@ -5,7 +5,7 @@ Description: Executive portrait, corporate headshots, and personal branding them
 Author: Gary Wallage
 Author URI: https://garywallage.uk
 Template: gary-wedding-pro
-Version: 1.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 Text Domain: gary-portrait-pro
 */
@@ -25,6 +25,7 @@ Text Domain: gary-portrait-pro
     --font-serif: "Cinzel", "Georgia", "Times New Roman", serif;
     --font-sans: "Inter", "Helvetica Neue", -apple-system, sans-serif;
     --font-script: "Pinyon Script", "Cormorant Garamond", serif;
+    --font-primary: var(--font-serif);   /* Override Wedding parent — use this site's serif as heading font */
 }
 
 body {
