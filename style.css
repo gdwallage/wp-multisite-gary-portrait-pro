@@ -5,7 +5,7 @@ Description: Executive portrait, corporate headshots, and personal branding them
 Author: Gary Wallage
 Author URI: https://garywallage.uk
 Template: gary-wedding-pro
-Version: 1.0.1
+Version: 1.0.2
 License: GNU General Public License v2 or later
 Text Domain: gary-portrait-pro
 */
@@ -83,4 +83,10 @@ body {
     font-size: 0.85rem;
     font-weight: 600;
     color: var(--brand-accent);
+}
+
+
+/* Explicit Blacksword Script Header Branding */
+.site-title-blacksword {
+    font-family: 'Blacksword', cursive !important;
 }
